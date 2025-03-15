@@ -49,7 +49,7 @@ $Params = @{
     ExtensionType      = 'CustomScript'
     TypeHandlerVersion = '2.1'
     ProtectedSettings  = @{
-        fileUris = @('https://raw.githubusercontent.com/<your-github-username>/azure_task_12_deploy_app_with_vm_extention/main/install-app.sh')
+        fileUris = @('https://raw.githubusercontent.com/VolodymyrKaraniuk/azure_task_12_deploy_app_with_vm_extention/main/install-app.sh')
         commandToExecute = './install-app.sh'
     }
 }
