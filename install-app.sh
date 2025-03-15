@@ -16,6 +16,7 @@ mkdir /app
 git clone https://github.com/VolodymyrKaraniuk/azure_task_12_deploy_app_with_vm_extention.git
 cd azure_task_12_deploy_app_with_vm_extention
 cp -r azure_task_12_deploy_app_with_vm_extention/app/* /app
+cd ..
 
 # create a service for the app via systemctl and start the app
 mv /app/todoapp.service /etc/systemd/system/
