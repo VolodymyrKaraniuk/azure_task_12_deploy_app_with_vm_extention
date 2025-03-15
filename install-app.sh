@@ -6,7 +6,7 @@
 
 # install system updates and isntall python3-pip package using apt. '-yq' flags are 
 # used to suppress any interactive prompts - we won't be able to confirm operation 
-# when running the script as VM extention.  
+# when running the script as VM extention.
 apt-get update -yq
 apt-get install python3-pip -yq
 
@@ -14,6 +14,7 @@ apt-get install python3-pip -yq
 mkdir /app 
 # make sure to uncomment the line bellow and update the link with your GitHub username
 git clone https://github.com/VolodymyrKaraniuk/azure_task_12_deploy_app_with_vm_extention.git
+cd azure_task_12_deploy_app_with_vm_extention
 cp -r azure_task_12_deploy_app_with_vm_extention/app/* /app
 
 # create a service for the app via systemctl and start the app
