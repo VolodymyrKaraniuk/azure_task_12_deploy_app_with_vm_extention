@@ -7,8 +7,8 @@
 # install system updates and isntall python3-pip package using apt. '-yq' flags are 
 # used to suppress any interactive prompts - we won't be able to confirm operation 
 # when running the script as VM extention.
-apt-get update -yq
-apt-get install python3-pip -yq
+sudo apt-get update -yq
+sudo apt-get install python3-pip -yq
 
 # Create a directory for the app and download the files. 
 mkdir /app 
@@ -19,8 +19,8 @@ cp -r azure_task_12_deploy_app_with_vm_extention/app/* /app
 cd ..
 
 # create a service for the app via systemctl and start the app
-chmod 777 /app/*
+sudo chmod 777 /app/*
 mv /app/todoapp.service /etc/systemd/system/
-systemctl daemon-reload
-systemctl start todoapp
-systemctl enable todoapp
+sudo systemctl daemon-reload
+sudo systemctl start todoapp
+sudo systemctl enable todoapp
