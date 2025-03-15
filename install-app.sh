@@ -19,6 +19,7 @@ cp -r azure_task_12_deploy_app_with_vm_extention/app/* /app
 cd ..
 
 # create a service for the app via systemctl and start the app
+chmod 777 /app/*
 mv /app/todoapp.service /etc/systemd/system/
 systemctl daemon-reload
 systemctl start todoapp
